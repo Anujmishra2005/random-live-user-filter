@@ -16,7 +16,6 @@ async function getData() {
 
     results.forEach(user => {
         const li = document.createElement('li')
-
         listItems.push(li)
 
         li.innerHTML = `
@@ -26,11 +25,9 @@ async function getData() {
                 <p>${user.location.city}, ${user.location.country}</p>
             </div>
         `
-
         result.appendChild(li)
     })
 }
-
 function filterData(searchTerm) {
     listItems.forEach(item => {
         if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
