@@ -10,7 +10,6 @@ async function getData() {
 
     const { results } = await res.json()
 
-    // Clear result
     result.innerHTML = ''
 
     results.forEach(user => {
